@@ -1,0 +1,53 @@
+main {
+  margin: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  .card {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    &__title {
+    }
+    &__top {
+    }
+    &__bottom {
+    }
+  }
+
+  .yellow {
+    background-color: $yellow;
+
+    .card__top {
+      background: url("../img/jaune.png") center/cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 60%;
+    }
+  }
+
+  .red {
+    background-color: $red;
+
+    .card__top {
+      background: url("../img/rouge.png") center/cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 60%;
+    }
+  }
+  .blue {
+    background-color: $blue;
+
+    .card__top {
+      background: url("../img/bleu.png") center/cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 60%;
+    }
+  }
+}
