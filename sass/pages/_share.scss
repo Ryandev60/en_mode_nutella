@@ -1,0 +1,20 @@
+.share {
+  color: $red;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    li {
+      padding: 4px;
+    }
+  }
+}
