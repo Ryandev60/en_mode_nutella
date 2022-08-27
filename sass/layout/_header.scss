@@ -23,6 +23,12 @@ header {
       display: flex;
       justify-content: center;
       margin: 0 6px 0 6px;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.25);
+      }
 
       img {
         width: 28px;
@@ -60,11 +66,95 @@ header {
       width: 95%;
     }
 
+    .nav__burger {
+      display: none;
+      width: 90%;
+
+      @media screen and (max-width: 780px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo__burger {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          li {
+            height: 3px;
+            width: 100%;
+            background-color: $white;
+            margin: 3px;
+          }
+        }
+      }
+
+      .nav__list {
+        @media screen and (max-width: 780px) {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: absolute;
+          top: 110px;
+          left: calc(50% - 47.5%);
+          height: 50vh;
+          width: 95%;
+          background-color: $red;
+          border-bottom-left-radius: 40px;
+          border-bottom-right-radius: 40px;
+
+          .logo__burger {
+            position: absolute;
+            top: 15px;
+            right: 40px;
+          }
+
+          .logo-nutella {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            margin-bottom: 20px;
+            img {
+              width: 70%;
+              @media screen and (max-width: 780px) {
+                width: 100%;
+              }
+            }
+          }
+
+          .nav__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: $white;
+            text-align: center;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            margin: 10 8px;
+            border-radius: 25px;
+            transition: 0.5s;
+            width: 90%;
+            cursor: pointer;
+
+            &:nth-child(2) {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+
     .nav__list {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 97%;
+
+      @media screen and (max-width: 780px) {
+        display: none;
+      }
     }
 
     .logo-nutella {
@@ -73,6 +163,10 @@ header {
       width: 24%;
       img {
         width: 70%;
+
+        @media screen and (max-width: 780px) {
+          width: 100%;
+        }
       }
     }
 
@@ -92,10 +186,18 @@ header {
       border-radius: 25px;
       transition: 0.5s;
       cursor: pointer;
+      &:nth-child(2) {
+        background-color: $dark-red;
+      }
 
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: 1170px) {
         font-size: 16px;
       }
+
+      @media screen and (max-width: 1170px) {
+        font-size: 14px;
+      }
+
       &:hover {
         background-color: $dark-red;
       }
@@ -142,12 +244,26 @@ header {
           margin-bottom: 0.5rem;
         }
 
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1170px) {
           font-size: 16px;
+        }
+
+        @media screen and (max-width: 1170px) {
+          font-size: 14px;
         }
         &:hover {
           color: $white;
           background-color: $red;
+        }
+
+        &:hover :nth-child(2) {
+          color: $red;
+          background-color: $white;
+        }
+
+        &:nth-child(2) {
+          background-color: $red;
+          color: $white;
         }
       }
     }

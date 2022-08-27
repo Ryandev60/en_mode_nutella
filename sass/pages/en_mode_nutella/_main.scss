@@ -4,7 +4,6 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 8rem;
-  width: 100%;
   flex-wrap: wrap;
 
   .block {
@@ -16,6 +15,7 @@ main {
     width: 30%;
     min-width: 310px;
     padding: 0 10px;
+    z-index: 1000;
 
     @media screen and (max-width: 1075px) {
       width: 40%;
@@ -85,8 +85,6 @@ main {
         min-height: 270px;
       }
 
-      
-
       .text {
         width: 85%;
         &__top {
@@ -116,7 +114,6 @@ main {
       margin-top: 15px;
 
       &:hover {
-        cursor: pointer;
         transform: scale(1.05);
       }
     }
