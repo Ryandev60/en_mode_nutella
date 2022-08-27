@@ -26,7 +26,6 @@
 
     &--bottom {
       font-size: 1rem;
-
       @media screen and (max-width: 1050px) {
         font-size: 1rem;
       }
@@ -51,13 +50,7 @@
       width: 120px;
     }
 
-    @media screen and (max-width: 800px) {
-      width: 90px;
-    }
-
-    @media screen and (max-width: 600px) {
-      width: 70px;
-    }
+  
   }
 
   &::after {
@@ -65,9 +58,13 @@
     position: absolute;
     height: 620px;
     width: 98%;
-    background: url("../img/background.png") center/contain;
+    background: url("../img/background.webp") center/contain;
     background-repeat: no-repeat;
     transform: translateY(-20px);
     z-index: -1;
+
+    @media screen and (max-width: 764px) {
+      background: none;
+    }
   }
 }

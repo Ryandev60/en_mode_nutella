@@ -137,6 +137,8 @@ header {
             transition: 0.5s;
             width: 90%;
             cursor: pointer;
+            border: 2px solid $white;
+            margin-bottom: 1rem;
 
             &:nth-child(2) {
               background-color: $red;
