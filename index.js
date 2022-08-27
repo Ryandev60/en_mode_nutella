@@ -1,13 +1,12 @@
-const positionBlock = main.offsetTop;
-console.log(positionBlock);
+const main = document.getElementById("main");
 
-document.addEventListener("scroll", () => {
-  let scrollValue =
-    (window.scrollY + window.innerHeight) / document.body.offsetHeight;
-  console.log(scrollValue);
+const yellowBlock = document.getElementById("yellowBlock");
+const redBlock = document.getElementById("redBlock");
+const blueBlock = document.getElementById("blueBlock");
 
-  console.log(scrollValue);
-  if (scrollValue > 0.37) {
-    main.style.transform = "scale(1)";
-  }
-});
+const sr = ScrollReveal();
+sr.reveal("#yellowBlock");
+sr.reveal("#redBlock");
+sr.reveal("#blueBlock");
+
+var parallaxInstance = new Parallax(main);

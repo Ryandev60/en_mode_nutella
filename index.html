@@ -1,156 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./img/icon_insta.png" />
-    <link rel="stylesheet" href="./css/styles.min.css" />
-    <title>En mode Nutella</title>
-  </head>
-  <body>
-    <header>
-      <div class="header__social">
-        <ul class="social__list">
-          <li class="icon">
-            <img src="./img/icon_facebook.png" alt="facebook" />
-          </li>
-          <li class="icon">
-            <img src="./img/icon_twitter.png" alt="twitter" />
-          </li>
-          <li class="icon">
-            <img src="./img/icon_youtube.png" alt="youtube" />
-          </li>
-          <li class="icon">
-            <img src="./img/icon_insta.png" alt="instagram" />
-          </li>
-          <li class="icon">
-            <img src="./img/icon_pinterest.png" alt="pinterest" />
-          </li>
-          <li class="bar"></li>
-          <li class="icon">
-            <img src="./img/icon_search.png" alt="rechercher" />
-          </li>
-        </ul>
-      </div>
-      <nav class="header__nav">
-        <div class="nav__top">
-          <ul class="nav__list">
-            <li class="logo-nutella">
-              <img src="./img/logo-nutella.webp" alt="" />
-            </li>
-            <li class="nav__text">
-              Les coulisses de <br />
-              Nutella®
-            </li>
-            <li class="nav__text">Inspiration</li>
-            <li class="nav__text">
-              Découvrez <br />
-              l'actualité
-            </li>
-            <li class="nav__text">Produits</li>
-          </ul>
-        </div>
-        <div class="nav__bottom">
-          <ul class="nav__list">
-            <li class="nav__text">Opération bonheur</li>
-            <li class="nav__text">En mode Nutella®</li>
-            <li class="nav__text">Participer</li>
-            <li class="nav__text">Suivi</li>
-            <li class="nav__text">Règlement</li>
-            <li class="nav__text">Contact</li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="banner">
-      <div class="banner__text">
-        <p class="banner__text--top">Et si on se levait de bonheur ?</p>
-        <p class="banner__text--bottom">Découvrez les conseils de Nutella®</p>
-        <span class="arrow"></span>
-      </div>
-      <img src="./img/heart.png" alt="" />
-    </section>
-    <main id="main">
-      <div class="block" id="yellowBlock">
-        <div class="block__title block__title--yellow">#EnModeTonique</div>
-        <div class="card card--yellow">
-          <div class="card__top card__top--yellow"></div>
-          <div class="card__bottom">
-            <div class="text">
-              <p class="text__top">
-                Pour tout ceux qui aiment se lever en mode tonique !
-              </p>
-              <p class="text__bottom">
-                Suivez nos astuces Nutella® et rayonnez dès le matin
-              </p>
-            </div>
-            <button>En savoir plus</button>
-          </div>
-        </div>
-      </div>
-      <div class="block">
-        <div class="block__title block__title--red">#EnModeLove</div>
-        <div class="card card--red">
-          <div class="card__top card__top--red"></div>
-          <div class="card__bottom">
-            <div class="text">
-              <p class="text__top">
-                Pour tout ceux qui aiment se lever en mode love !
-              </p>
-              <p class="text__bottom">
-                Suivez nos astuces Nutella® pour s'aimer et aimer du matin
-                jusqu'au soir.
-              </p>
-            </div>
-            <button>En savoir plus</button>
-          </div>
-        </div>
-      </div>
-      <div class="block">
-        <div class="block__title block__title--blue">#EnModeRelax</div>
-        <div class="card card--blue">
-          <div class="card__top card__top--blue"></div>
-          <div class="card__bottom">
-            <div class="text">
-              <p class="text__top">
-                Pour tout ceux qui aiment se lever en mode RELAX !
-              </p>
-              <p class="text__bottom">
-                Découvrez nos conseils Nutella® pour prendre son temps et
-                libérer son corps et son esprit.
-              </p>
-            </div>
-            <button>En savoir plus</button>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div class="share">
-      <p>Si vous aimez, partagez sur <ul>
-        <li>
-          <img src="./img/icon_facebook.png" alt="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/icon_insta.png" />
+  <link rel="stylesheet" href="./css/styles.min.css" />
+  <title>En mode Nutella</title>
+</head>
+
+<body>
+  <header>
+    <div class="header__social">
+      <ul class="social__list">
+        <li class="icon">
+          <img src="./img/icon_facebook.png" alt="facebook" />
         </li>
-        <li>
-          <img src="./img/icon_facebook.png" alt="">
+        <li class="icon">
+          <img src="./img/icon_twitter.png" alt="twitter" />
         </li>
-        <li>
-          <img src="./img/icon_facebook.png" alt="">
+        <li class="icon">
+          <img src="./img/icon_youtube.png" alt="youtube" />
         </li>
-        <li>
-          <img src="./img/icon_facebook.png" alt="">
+        <li class="icon">
+          <img src="./img/icon_insta.png" alt="instagram" />
+        </li>
+        <li class="icon">
+          <img src="./img/icon_pinterest.png" alt="pinterest" />
+        </li>
+        <li class="bar"></li>
+        <li class="icon">
+          <img src="./img/icon_search.png" alt="rechercher" />
         </li>
       </ul>
-    </p>
     </div>
-    <footer>
-    </footer>
-  </body>
-  <script src="./index.js"></script>
+    <nav class="header__nav">
+      <div class="nav__top">
+        <ul class="nav__list">
+          <li class="logo-nutella">
+            <img src="./img/logo-nutella.webp" alt="" />
+          </li>
+          <li class="nav__text">
+            Les coulisses de <br />
+            Nutella®
+          </li>
+          <li class="nav__text">Inspiration</li>
+          <li class="nav__text">
+            Découvrez <br />
+            l'actualité
+          </li>
+          <li class="nav__text">Produits</li>
+        </ul>
+      </div>
+      <div class="nav__bottom">
+        <ul class="nav__list">
+          <li class="nav__text">Opération bonheur</li>
+          <li class="nav__text">En mode Nutella®</li>
+          <li class="nav__text">Participer</li>
+          <li class="nav__text">Suivi</li>
+          <li class="nav__text">Règlement</li>
+          <li class="nav__text">Contact</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="banner">
+    <div class="banner__text">
+      <p class="banner__text--top">Et si on se levait de bonheur ?</p>
+      <p class="banner__text--bottom">Découvrez les conseils de Nutella®</p>
+      <span class="arrow"></span>
+    </div>
+    <img src="./img/heart.png" alt="" />
+  </section>
+  <main id="main">
+    <div class="block" id="yellowBlock" data-depth="0.1">
+      <div class="block__title block__title--yellow">#EnModeTonique</div>
+      <div class="card card--yellow" >
+        <div class="card__top card__top--yellow">
+          <img src="./img/jaune.png" alt="">
+        </div>
+        <div class="card__bottom">
+          <div class="text">
+            <p class="text__top">
+              Pour tout ceux qui aiment se lever en mode tonique !
+            </p>
+            <p class="text__bottom">
+              Suivez nos astuces Nutella® et rayonnez dès le matin
+            </p>
+          </div>
+          <button>En savoir plus</button>
+        </div>
+      </div>
+    </div>
+    <div class="block" id="redBlock" data-depth="0.2">
+      <div class="block__title block__title--red">#EnModeLove</div>
+      <div class="card card--red"  >
+        <div class="card__top card__top--red">
+
+          <img src="./img/rouge.png" alt="">
+
+        </div>
+        <div class="card__bottom">
+          <div class="text">
+            <p class="text__top">
+              Pour tout ceux qui aiment se lever en mode love !
+            </p>
+            <p class="text__bottom">
+              Retrouvez nos secrets Nutella® pour s'aimer et aimer du matin jusqu'au soir.
+            </p>
+          </div>
+          <button>En savoir plus</button>
+        </div>
+      </div>
+    </div>
+    <div class="block" id="blueBlock" data-depth="0.1">
+      <div class="block__title block__title--blue">#EnModeRelax</div>
+      <div class="card card--blue" >
+        <div class="card__top card__top--blue">
+
+          <img src="./img/bleu.png" alt="">
+
+        </div>
+        <div class="card__bottom">
+          <div class="text">
+            <p class="text__top">
+              Pour tout ceux qui aiment se lever en mode RELAX !
+            </p>
+            <p class="text__bottom">
+              Découvrez nos conseils Nutella® pour prendre son temps et
+              libérer son corps et son esprit.
+            </p>
+          </div>
+          <button>En savoir plus</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="share">
+    <p>Si vous aimez, partagez sur
+    <ul>
+      <li>
+        <img src="./img/icon_facebook.png" alt="">
+      </li>
+      <li>
+        <img src="./img/icon_facebook.png" alt="">
+      </li>
+      <li>
+        <img src="./img/icon_facebook.png" alt="">
+      </li>
+      <li>
+        <img src="./img/icon_facebook.png" alt="">
+      </li>
+    </ul>
+    </p>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <h4>Ferrero websites</h4>
+      </li>
+      <li>Word Nutella® Day</li>
+      <li>Ferrero.com</li>
+      <li>Ferrero CSR</li>
+      <li>Ferrero Careers</li>
+      <li>Ferrero Hazelnut Company</li>
+      <li>Ferrero Linkedin</li>
+      <li>Tictac.com</li>
+      <li>Kinder.com</li>
+      <li>FerreroRocher.com</li>
+    </ul>
+    <ul>
+      <li>
+        <h4>Les coulisses de Nutella®</h4>
+      </li>
+      <li>Nos Engagements Durables</li>
+      <li>Notre qualité et nos ingrédients</li>
+      <li>Recycler le pot</li>
+      <li>Nouveau look</li>
+      <li>Notre Héritage</li>
+      <li>FAQ</li>
+    </ul>
+    <ul>
+      <li>
+        <h4>Inspiration</h4>
+      </li>
+      <li>Choisissez votre recette au Nutella®</li>
+      <li>Transformez votre pot de Nutella®</li>
+    </ul>
+    <ul>
+      <li>
+        <h4>Découvrez l'actualité</h4>
+      </li>
+      <li>Tous de nos régions</li>
+      <li>Nutella Academy</li>
+      <li>Voyager Avec Nutella®</li>
+      <li>Nutella® Cafe</li>
+    </ul>
+    <ul>
+      <li>
+        <h4>Produits</h4>
+      </li>
+      <li>Nutella®</li>
+      <li>Nutella® Biscuits</li>
+      <li>Nutella® B-ready</li>
+      <li>Nutella® & GO!</li>
+      <li>Nutella® Muffin</li>
+    </ul>
+  </footer>
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script><script src="./index.js"></script>
 </html>

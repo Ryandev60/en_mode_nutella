@@ -1,7 +1,8 @@
 @import "./base/reset";
 @import "./utils/variable";
+@import "./utils/responsive";
 @import "./layout/header";
 @import "./layout/footer";
-@import "./pages/_banner";
-@import "./pages/main";
-@import "./pages/share";
+@import "./pages/en_mode_nutella/_banner";
+@import "./pages/en_mode_nutella/main";
+@import "./pages/en_mode_nutella/share";

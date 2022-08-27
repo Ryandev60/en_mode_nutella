@@ -1,5 +1,20 @@
 footer {
-  height: 600px;
+  padding-top: 5rem;
   background-color: $red;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: $white;
+
+  ul {
+    padding: 0 40px;
+    h4 {
+      margin-bottom: 0.75rem;
+    }
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
 }

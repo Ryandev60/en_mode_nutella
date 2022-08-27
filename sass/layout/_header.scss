@@ -6,7 +6,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
-  
 }
 
 .header__social {
@@ -57,6 +56,10 @@ header {
     margin-bottom: 20px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.205);
 
+    @media screen and (max-width: 1250px) {
+      width: 95%;
+    }
+
     .nav__list {
       display: flex;
       align-items: center;
@@ -89,6 +92,10 @@ header {
       border-radius: 25px;
       transition: 0.5s;
       cursor: pointer;
+
+      @media screen and (max-width: 1000px) {
+        font-size: 16px;
+      }
       &:hover {
         background-color: $dark-red;
       }
@@ -100,10 +107,22 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 73%;
+
+    @media screen and (max-width: 1250px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 1150px) {
+      width: 90%;
+    }
+
     .nav__list {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      @media screen and (max-width: 950px) {
+        flex-wrap: wrap;
+      }
 
       .nav__text {
         text-align: center;
@@ -114,10 +133,18 @@ header {
         cursor: pointer;
         font-size: 18px;
         color: $red;
+        background-color: $white;
         border: 2px solid $red;
         padding: 10px 15px;
         border-radius: 35px;
         font-weight: bold;
+        @media screen and (max-width: 950px) {
+          margin-bottom: 0.5rem;
+        }
+
+        @media screen and (max-width: 1000px) {
+          font-size: 16px;
+        }
         &:hover {
           color: $white;
           background-color: $red;
