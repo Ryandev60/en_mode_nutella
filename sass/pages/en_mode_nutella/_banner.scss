@@ -1,70 +1,68 @@
 .banner {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 4rem;
-  padding: 0 20px;
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 4rem;
+   padding: 0 20px;
 
-  &__text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
 
-    &--top {
-      font-size: 3rem;
-      font-weight: bold;
-      color: $red;
-      text-align: center;
+      &--top {
+         font-size: 3rem;
+         font-weight: bold;
+         color: $red;
+         text-align: center;
+
+         @media screen and (max-width: 1050px) {
+            font-size: 1.5rem;
+         }
+      }
+
+      &--bottom {
+         font-size: 1rem;
+         @media screen and (max-width: 1050px) {
+            font-size: 1rem;
+         }
+      }
+   }
+
+   .arrow {
+      margin-top: 5px;
+      width: 20px;
+      height: 20px;
+      border-bottom: 4px solid $red;
+      border-right: 4px solid $red;
+      transform: rotate(45deg);
+      cursor: pointer;
+   }
+
+   img {
+      margin-top: 15px;
+      width: 200px;
 
       @media screen and (max-width: 1050px) {
-        font-size: 1.5rem;
+         width: 120px;
       }
-    }
+   }
 
-    &--bottom {
-      font-size: 1rem;
-      @media screen and (max-width: 1050px) {
-        font-size: 1rem;
+   &::after {
+      content: "";
+      position: absolute;
+      height: 620px;
+      width: 98%;
+      background: url("../img/background.webp") center/contain;
+      background-repeat: no-repeat;
+      transform: translateY(-20px);
+      z-index: -1;
+
+      @media screen and (max-width: 764px) {
+         background: none;
       }
-    }
-  }
-
-  .arrow {
-    margin-top: 5px;
-    width: 20px;
-    height: 20px;
-    border-bottom: 4px solid $red;
-    border-right: 4px solid $red;
-    transform: rotate(45deg);
-    cursor: pointer;
-  }
-
-  img {
-    margin-top: 15px;
-    width: 200px;
-
-    @media screen and (max-width: 1050px) {
-      width: 120px;
-    }
-
-  
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 620px;
-    width: 98%;
-    background: url("../img/background.webp") center/contain;
-    background-repeat: no-repeat;
-    transform: translateY(-20px);
-    z-index: -1;
-
-    @media screen and (max-width: 764px) {
-      background: none;
-    }
-  }
+   }
 }

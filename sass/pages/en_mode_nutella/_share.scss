@@ -1,22 +1,26 @@
 .share {
-  color: $red;
-  font-weight: bold;
-  font-size: 1.25rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
+   color: $red;
+   font-weight: bold;
+   font-size: 1.25rem;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1.5rem;
 
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+   ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
 
-    li {
-      padding: 4px;
-    }
-  }
+      li {
+         padding: 4px;
+
+         img {
+            width: 16px;
+         }
+      }
+   }
 }

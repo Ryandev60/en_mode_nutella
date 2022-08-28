@@ -10,6 +10,9 @@ const textNavBottom = document.querySelectorAll(".nav__bottom .nav__text");
 const menuBurger = document.getElementById("burger");
 const listBurger = document.getElementById("listBurger");
 const closeBurger = document.getElementById("closeBurger");
+const logoBurger = document.getElementById("logoBurger");
+const lineBurger = document.querySelectorAll(".line");
+console.log(lineBurger);
 
 //On off
 
@@ -25,13 +28,13 @@ const darkRed = "#d20000";
 
 const sr = ScrollReveal();
 sr.reveal("#yellowBlock", {
-  delay: 500,
+  delay: 600,
 });
 sr.reveal("#redBlock", {
-  delay: 500,
+  delay: 600,
 });
 sr.reveal("#blueBlock", {
-  delay: 500,
+  delay: 600,
 });
 
 // Parallax effect

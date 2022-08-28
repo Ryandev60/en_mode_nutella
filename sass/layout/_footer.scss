@@ -1,75 +1,75 @@
 footer {
-  padding-top: 5rem;
-  background-color: $red;
-  width: 100%;
-  color: $white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+   padding-top: 5rem;
+   background-color: $red;
+   width: 100%;
+   color: $white;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
 
-  .footer__top {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    border-bottom: 1px solid $black;
+   .footer__top {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      border-bottom: 1px solid $black;
 
-    @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1200px) {
+         flex-wrap: wrap;
+      }
+      ul {
+         padding: 0 40px;
+         min-width: 150px;
+         margin-bottom: 2rem;
+         h4 {
+            margin-bottom: 0.75rem;
+         }
+
+         li {
+            margin-bottom: 0.25rem;
+            @media screen and (max-width: 1200px) {
+               text-align: center;
+            }
+         }
+      }
+   }
+
+   .footer__bottom {
+      padding: 2rem 0 3rem 0;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
-    }
-    ul {
-      padding: 0 40px;
-      min-width: 150px;
-      margin-bottom: 2rem;
-      h4 {
-        margin-bottom: 0.75rem;
+
+      div {
+         margin-bottom: 2rem;
       }
 
-      li {
-        margin-bottom: 0.25rem;
-        @media screen and (max-width: 1200px) {
-          text-align: center;
-        }
+      .left {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 33%;
+         min-width: 210px;
       }
-    }
-  }
+      .middle {
+         display: flex;
+         justify-content: center;
+         width: 33%;
+         min-width: 210px;
 
-  .footer__bottom {
-    padding: 2rem 0 3rem 0;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    div {
-      margin-bottom: 2rem;
-    }
-
-    .left {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 33%;
-      min-width: 210px;
-    }
-    .middle {
-      display: flex;
-      justify-content: center;
-      width: 33%;
-      min-width: 210px;
-
-      img {
-        width: 60px;
+         img {
+            width: 60px;
+         }
       }
-    }
-    .right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 33%;
-      font-weight: bold;
-      min-width: 210px;
-    }
-  }
+      .right {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 33%;
+         font-weight: bold;
+         min-width: 210px;
+      }
+   }
 }
